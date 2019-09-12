@@ -11,4 +11,20 @@ $greeting = "What's up";
 //Wrap w/htmlspecialchars function to 'sanitize input'. Guilt until proven innocent!
 $name = htmlspecialchars($_GET['name']);
 
+//normal array
+$names = [
+    'Sam',
+    'John',
+    'Lary',
+    'Mickey'
+];
+$names[] = 'Timmy';
+//Associative array w/ key/value pairs
+$person = [
+    'age' => 31,
+    'name' => 'Sam',
+    'eyeColor' => 'blue'
+];
+$person['hair'] = 'blonde';
+
 require 'index.view.php';
