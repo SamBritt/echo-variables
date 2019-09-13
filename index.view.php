@@ -41,6 +41,37 @@
             </ol>
         </div>
     </section>
+    <section>
+        <div>
+            <ul>
+                <?php foreach ($task as $prop => $val) : ?>
+                    <li><strong><?= ucwords($prop).": " ?></strong><?= $val; ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Separated for more control:</h2>
+        <div>
+            <ul>
+                <li>
+                    <strong>Assignment: </strong> <?=$task['assignment']; ?>
+                </li>
+                <li>
+                    <strong>Title: </strong> <?=$task['title']; ?>
+                </li>
+                <li>
+                    <strong>Difficulty: </strong> <?=$task['difficulty']; ?>
+                </li>
+                <li>
+                    <strong>Is Due: </strong> <?=$task['isDue'] ? 'Due' : 'Not Due'; ?>
+                </li>
+                <li>
+                    <strong>Assigned To: </strong> <?=$task['assigned_to']; ?>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 </body>
 
