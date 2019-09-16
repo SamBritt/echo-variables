@@ -15,7 +15,7 @@ $task = [
     'assignment' => 1,
     'title' => 'Arrays in PHP',
     'difficulty' => 3,
-    'isDue' => true,
+    'isDue' => false,
     'assigned_to' => "Sam Britt"
 ];
 

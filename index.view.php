@@ -72,6 +72,16 @@
             </ul>
         </div>
     </section>
+    <section>
+        <h2>Ternery Endif</h2>
+        <div>
+            <?php if($task['isDue']) : ?>
+                <span class = "icon"><strong>Is Due: </strong>&#9989;</span>
+            <?php else : ?>
+                <span class = "icon"><strong>Is Due: </strong>&#10006;</span>
+            <?php endif; ?>
+        </div>
+    </section>
 
 </body>
 
